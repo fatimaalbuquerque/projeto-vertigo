@@ -16,6 +16,13 @@
 /* mas o rem se adapta, 1rem = 16px */
 /* SEMPRE que se mecher com a posição de um objeto na tela (cima, baixo, esquerda, direitra etc) utilizamos o DISPLAY-FLEX */
 
+/* podemos criar uma pseudo-classe (só existe no CSS) q afeta diretamente a tag html */
+/* podemos aq criar uma variável q nem no python, só add dois traços na frente, para utliza-lá digite var(--nome da varioável */
+:root {
+    --grey-800: #1E293B;
+    --grey-600: #475569;
+}
+
 header {
     background-image: url(./imagens/bg-mobile.png);
     background-size: cover;
@@ -26,4 +33,20 @@ header {
     justify-content: center;
     /* meche na posição da vertical */
     align-items: center;
+
+    margin-bottom: 3.7rem;
 }
+
+main {
+    /* só nas laterais */
+    padding-inline: 1.5rem;
+}
+
+/* selecionar apenas os h1's q estão dentro da classe descricao */
+.descricao h1 {
+    color: var(--grey-800);
+    margin-bottom: 1rem;
+    font-size: 1.5625rem;
+}
+
+/* nome da cor, rgb, rgba, hexadecimal (hex, vamos trabalhar com ele), hsl, hwb */
