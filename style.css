@@ -2,6 +2,7 @@
 /* o que mais diferencia a responsividade é o CSS */
 /* vamos trabalhar com o 375 px, que é o médio de celulares */
 
+
 * {
     /* reset do CSS */
     margin: 0;
@@ -11,7 +12,18 @@
     font-family: 'Titillium Web', sans-serif;
 }
 
+/* se usarmos o px, o usuário n poderá alterar o tamnho da fonte no seu navegador, ele n se adapta */
+/* mas o rem se adapta, 1rem = 16px */
+/* SEMPRE que se mecher com a posição de um objeto na tela (cima, baixo, esquerda, direitra etc) utilizamos o DISPLAY-FLEX */
+
 header {
     background-image: url(./imagens/bg-mobile.png);
     background-size: cover;
+    height: 8.375rem;
+
+    display: flex;
+    /* meche na posição da horizontal */
+    justify-content: center;
+    /* meche na posição da vertical */
+    align-items: center;
 }
