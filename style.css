@@ -1,6 +1,7 @@
 /* asterisco seleciona tudo da página */
 /* o que mais diferencia a responsividade é o CSS */
 /* vamos trabalhar com o 375 px, que é o médio de celulares */
+/* nome da cor, rgb, rgba, hexadecimal (hex, vamos trabalhar com ele), hsl, hwb */
 
 
 * {
@@ -42,6 +43,10 @@ main {
     padding-inline: 1.5rem;
 }
 
+.descricao {
+    margin-bottom: 2.5rem;
+}
+
 /* selecionar apenas os h1's q estão dentro da classe descricao */
 .descricao h1 {
     color: var(--grey-800);
@@ -49,4 +54,7 @@ main {
     font-size: 1.5625rem;
 }
 
-/* nome da cor, rgb, rgba, hexadecimal (hex, vamos trabalhar com ele), hsl, hwb */
+.descricao p {
+    color: var(--grey-600);
+    font-size: 0.8125rem;
+}
