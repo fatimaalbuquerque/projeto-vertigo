@@ -22,6 +22,8 @@
 :root {
     --grey-800: #1E293B;
     --grey-600: #475569;
+    --grey400: #94a3b8;
+    --grey-200: #e2e8f0
     --purple: #7c3aed
 }
 
@@ -63,6 +65,9 @@ main {
 .input-box {
     display: flex;
     flex-direction: column;
+    margin-bottom: 1rem;
+    /* como utilizamos o display flex, podemos usar o gap q da espaço entre os elementos */
+    gap: 0.5rem;
 }
 
 .input-box div {
@@ -75,6 +80,22 @@ main {
     font-size: 0.875rem;
     color: var(--grey-800);
     font-weight: 600;
+}
+
+.login input {
+    padding: 1rem 0.75rem;
+    border: 1px solid var(--grey-200);
+    border-radius: 0.25rem;
+}
+
+/* placeholder é um atributo, ent precisa colocoar o dois pontos antes */
+.login input::placeholder {
+    color: var(--grey400);
+}
+
+.login input:hover,
+.login input:focus {
+    outline: 1px solid var(--purple);
 }
 
 .login a {
